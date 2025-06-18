@@ -47,3 +47,45 @@ The following tasks were performed:
    - PCA error-vs-dimension plot was created
    - 3D scatter plot using first three principal components
 
+5. **Directory Structure**
+
+.
+├── sampled_train/           # 50 images/class sampled from original train set
+├── sampled_test/            # 20 images/class sampled from original test set
+├── NEU_KMeans_PCA_Notebook.ipynb
+├── README.md
+└── requirements.txt
+
+6. **How to Run**
+Prepare Dataset
+Download the NEU-DET dataset and modify train_src and val_src paths in the notebook.
+
+Run the Notebook
+Open NEU_KMeans_PCA_Notebook.ipynb in Jupyter or VSCode and execute cells sequentially.
+
+Interpret Results
+Confusion matrices and accuracy scores are printed. PCA plots and 3D visualizations are generated.
+
+7. **Results**
+
+Task	               Accuracy (Train)	 Accuracy (Test)
+Raw Data + KMeans	   38.3%	         25.8%
+PCA (l=40) + KMeans	   41.7%	         36.7%
+
+The best trade-off between dimensionality and generalization was achieved at 40 principal components.
+
+8. **Dependencies**
+
+Python 3.8+
+numpy
+opencv-python
+pandas
+matplotlib
+scikit-learn
+
+You can install them with:
+
+pip install numpy opencv-python pandas matplotlib scikit-learn
+
+
+
