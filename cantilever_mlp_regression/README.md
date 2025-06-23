@@ -4,7 +4,7 @@ This project applies a Multi-Layer Perceptron (MLP) to predict displacements $(u
 
 ## Contents
 
-- `data/` — Contains the input file `collocation_linear.csv` with sampled FEM displacement data.
+- `data/` — Contains the input file `collocation_linear.csv` with sampled FEM displacements data.
 - `results/` — Stores output plots, MSE tables, and the break-even analysis figure.
 - `MLP_regression.ipynb` — Jupyter notebook containing data preprocessing, model training, hyperparameter tuning, interpolation comparisons, and result generation.
 
